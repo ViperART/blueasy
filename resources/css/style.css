@@ -1,0 +1,55 @@
+.headline,
+.cite {
+    max-width: 80%;
+    margin: auto;
+}
+
+.headline {
+    display: flex;
+    justify-content: space-between;
+}
+
+header {
+    background: url(../images/background_top.jpg);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.headline-wrap {
+    background-color: hsla(205, 14%, 24%, 0.85);
+    padding: 4.0625rem 0 4.0625rem 0;
+}
+
+.cite {
+    background-color: hsla(205, 14%, 24%, 0.85);
+}
+
+ul {
+    display: flex;
+}
+
+ul li {
+    padding-left: 2rem;
+}
+
+h1,
+h1 span,
+li a {
+    text-transform: uppercase;
+    color: #fff;
+}
+
+li a {
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+h1,
+h1 span {
+    font-size: 1.875rem;
+    font-weight: 700;
+    letter-spacing: 0rem;
+}
+
+h1 span {
+    color: #4bcaff;
+}
