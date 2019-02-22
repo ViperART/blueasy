@@ -1,8 +1,25 @@
+/* width of entire website */
+
+body {
+    max-width: 1920px;
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .headline,
-.cite {
-    max-width: 80%;
+.cite,
+.services,
+.portfolio,
+.video-sec,
+.twitter,
+.who-is,
+.testimonials,
+.contact {
+    max-width: 60.9375%;
     margin: auto;
 }
+
+/* HEADER stylings */
 
 .headline {
     display: flex;
@@ -11,7 +28,8 @@
 
 header {
     background: url(../images/background_top.jpg);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-repeat: no-repeat;
+    height: 50rem;
 }
 
 .headline-wrap {
@@ -19,16 +37,37 @@ header {
     padding: 4.0625rem 0 4.0625rem 0;
 }
 
-.cite {
-    background-color: hsla(205, 14%, 24%, 0.85);
-}
-
 ul {
     display: flex;
+    align-items: center;
 }
 
-ul li {
-    padding-left: 2rem;
+/* nav button styles */
+
+.selected {
+    color: #4bcaff;
+    border: 2px solid #4bcaff;
+    padding: 0.625rem 1.125rem;
+}
+
+.cite {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2.625rem;
+    font-weight: 300;
+    margin: 15.625rem auto 15.625rem auto;
+}
+
+.cite span {
+    background-color: hsla(205, 14%, 24%, 0.85);
+    padding: 1rem 1.25rem;
+}
+
+#cite-top {
+    margin-bottom: 0.75rem;
 }
 
 h1,
@@ -38,9 +77,11 @@ li a {
     color: #fff;
 }
 
-li a {
+ul li a {
     font-size: 0.875rem;
     font-weight: 600;
+    border: 2px solid hsla(205, 14%, 24%, 0);
+    padding: 0.625rem 1.125rem;
 }
 
 h1,
@@ -52,4 +93,434 @@ h1 span {
 
 h1 span {
     color: #4bcaff;
+}
+
+/* Services styling */
+
+.services-wrap {
+    background: #4bcaff;
+    color: #fff;
+    height: 25rem;
+    display: flex;
+}
+
+.title {
+    font-size: 1.875rem;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+h2 {
+    margin-bottom: 0.4375rem;
+}
+
+.line {
+    width: 2.8125rem;
+    height: 2px;
+    background-color: #fff;
+    margin-bottom: 2.5rem;
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature {
+    max-width: 22.2222%;
+}
+
+.feature img {
+    margin-bottom: 1.5rem;
+}
+
+.feature p {
+    font-size: 0.75rem;
+    line-height: 1rem;
+}
+
+h3 {
+    margin-bottom: 1.25rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Portfolio styling */
+
+.portfolio-wrap {
+    height: 50rem;
+    display: flex;
+    color: #515f67;
+}
+
+.portfolio-headline {
+    display: flex;
+    justify-content: space-between;
+}
+
+.portfolio-headline .title .line {
+    background: #515f67;
+}
+
+.portfolio-nav ul li a {
+    color: #515f67;
+}
+
+.portfolio-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.plus {
+    height: 16.875rem;
+    width: 16.875rem;
+    margin-bottom: 1.75rem;
+    display: block;
+}
+
+
+.plus:hover {
+    cursor: pointer;
+    background-image: url('../images/plus.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.square {
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.square:hover {
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    background: hsla(205, 14%, 24%, 0.85);
+}
+
+/* made an overlay this unpleasant way */
+
+.p-img-wrap-1 {
+    background: url('../images/portfolio-1.jpg');
+    background-repeat: no-repeat;
+}
+
+.p-img-wrap-2 {
+    background: url('../images/portfolio-2.jpg');
+    background-repeat: no-repeat;
+}
+
+.p-img-wrap-3 {
+    background: url('../images/portfolio-3.jpg');
+    background-repeat: no-repeat;
+}
+
+.p-img-wrap-4 {
+    background: url('../images/portfolio-4.jpg');
+    background-repeat: no-repeat;
+}
+
+.p-img-wrap-5 {
+    background: url('../images/portfolio-5.jpg');
+    background-repeat: no-repeat;
+}
+
+.p-img-wrap-6 {
+    background: url('../images/portfolio-6.jpg');
+    background-repeat: no-repeat;
+}
+
+.p-img-wrap-7 {
+    background: url('../images/portfolio-7.jpg');
+    background-repeat: no-repeat;
+}
+
+.p-img-wrap-8 {
+    background: url('../images/portfolio-8.jpg');
+    background-repeat: no-repeat;
+}
+
+/* Video section styling */
+
+.video-sec-wrap {
+    background: #515f67;
+    height: 30rem;
+    display: flex;
+    align-items: center;
+}
+
+.video-sec {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.video-sec {
+    color: #fff;
+}
+
+.video-desc p {
+    line-height: 1.5rem;
+    font-size: 0.875rem;
+}
+
+.video-desc {
+    max-width: 40.8%;
+}
+
+.video-desc-top {
+    margin-bottom: 2.5rem;
+}
+
+.video-desc-bot {
+    margin-bottom: 4rem;
+}
+
+.video-desc a {
+    text-transform: uppercase;
+    cursor: pointer;
+    /* display: block; */
+    padding: 0.8rem 2.3rem;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.video-desc a:hover {
+    border: 2px solid #4bcaff;
+    color: #4bcaff;
+}
+
+/* Twitter section styling  */
+
+.twitter {
+    padding-top: 4.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.twitter-wrap {
+    background: #4bcaff;
+    color: #fff;
+    height: 18.75rem;
+}
+
+.twitter-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.twitter p {
+    font-size: 1.75rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.twitter p span {
+    font-weight: 600;
+}
+
+/* Who-is section styling */
+
+.who-is-wrap {
+    background: url('../images/who_is.jpg');
+    color: #fff;
+    height: 31.5625rem;
+    display: flex;
+    align-items: center;
+}
+
+.who-is-overlay {
+    background: hsla(212, 16%, 33%, 0.75);
+    height: 100%;
+    display: flex;
+}
+
+.who-is-desc {
+    display: flex;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+}
+
+.who-is-desc div p {
+    margin-bottom: 2.5rem;
+    max-width: 96%;
+}
+
+.who-is-images {
+    display: flex;
+}
+
+.who-is-img-wrap {
+    border: 2px solid #fff;
+    margin: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.who-is-img-wrap img {
+    padding: 1rem 1rem;
+}
+
+/* testimonials section styling */
+
+.testimonials-wrap {
+    color: #515f67;
+    height: 18.75rem;
+}
+
+.testimonials {
+    margin-top: 4.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.testimonials .line {
+    background: #515f67;
+}
+
+.t-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.t-title div {
+    display: flex;
+    align-items: center;
+}
+
+.testimonials p {
+    font-size: 1.75rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    line-height: 2.5rem;
+}
+
+.walter {
+    font-size: 0.875;
+    font-weight: 600;
+    color: #4bcaff;
+}
+
+/* Contact styling */
+
+.contact-overlay {
+    background: hsla(208, 10%, 35%, 0.75);
+    height: 100%;
+    display: flex;
+    color: #fff;
+}
+
+.contact-wrap {
+    background: url('../images/contacts.jpg');
+    height: 50.875rem;
+}
+
+input,
+textarea {
+    border: 2px solid #fff;
+    margin-bottom: 2rem;
+}
+
+.contact-top-block input {
+    height: 3.5rem;
+    width: 29.125rem;
+    font-size: 2.2rem;
+    color: #fff;
+    padding: 0.45rem;
+}
+
+.contact-top-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-info {
+    max-width: 54%;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5rem;
+    font-size: 0.875rem;
+}
+
+.contact-info p {
+    margin-bottom: 2rem;
+}
+
+.inputs-top {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs-top span,
+.inputs-bot span {
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+
+.inputs-bot {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs-bot textarea {
+    height: 13.5rem;
+    font-size: 2.2rem;
+    width: 100%;
+    color: #fff;
+    padding: 0.45rem;
+}
+
+.contact a {
+    color: #fff;
+    background: #4bcaff;
+    display: block;
+    padding: 1.5rem 4rem;
+    max-width: 16rem;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+}
+
+/* footer styling */
+
+footer {
+    background: #353f47;
+    color: #515f67;
+    height: 10.625rem;
+    display: flex;  
+}
+
+.footer-nav ul li a,
+.copyright span a {
+    color: #515f67;
+}
+
+.copyright span a {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.footer-wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 60.9375%;
+    margin: auto;
+    align-items: center;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
